@@ -121,7 +121,7 @@ const handler = async (req: Request): Promise<Response> => {
     console.log(`Sending verification email to: ${email}`);
 
     // Get the app URL from environment or use default
-    const appUrl = Deno.env.get("APP_URL") || "https://cspehwoxnixxyuyuwjkh.lovableproject.com";
+    const appUrl = Deno.env.get("APP_URL") || "https://register.uslaccafrica.org";
     const verificationLink = `${appUrl}/verify-email?token=${encodeURIComponent(verificationToken)}`;
 
     const client = new SMTPClient({
